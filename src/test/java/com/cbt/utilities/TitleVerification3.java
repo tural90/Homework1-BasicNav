@@ -29,7 +29,7 @@ public class TitleVerification3 {
 
         driver.close();
         System.out.println("================");
-
+        driver = BrowserFactory.getDriver("chrome");
         driver.get(urls.get(1));
         String wayfair = driver.getTitle();
         wayfair = wayfair.replace(" ","").toLowerCase();
@@ -44,7 +44,7 @@ public class TitleVerification3 {
         driver.close();
 
         System.out.println("================");
-
+        driver = BrowserFactory.getDriver("chrome");
         driver.get(urls.get(2));
         String walmart = driver.getTitle();
         walmart = walmart.replace(" ","").toLowerCase();
@@ -60,7 +60,7 @@ public class TitleVerification3 {
 
         System.out.println("================");
 
-
+        driver = BrowserFactory.getDriver("chrome");
         driver.get(urls.get(3));
         String westelm = driver.getTitle();
         westelm = westelm.replace(" ","").toLowerCase();
